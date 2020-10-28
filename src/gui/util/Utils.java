@@ -11,5 +11,15 @@ public class Utils {
 		return (Stage) ((Node)event.getSource()).getScene().getWindow();
 		//serve para pegar o stage do botao clicado, a tela principal
 	}
+	
+	public static Integer tryParseToInt(String str) {
+		try {
+		return Integer.parseInt(str);
+		
+		}
+		catch(NumberFormatException e) {
+			return null;
+		}
+	}
 
 }
